@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Placard Maker</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+	</head>
+	<body>
+
+	    <div class="container">
+
+			<div id="contact" action="">
+				<h3>Conferece: {{ conference }}</h3>
+				<br>
+				<h3>Room: {{ room }}</h3>
+				<br>
+				<h3>Attendees: {{ people }}</h3>
+				<br>
+				<fieldset>
+					<a href="/{{ conference }}_{{ room }}.zip" method="post">
+					    <button type="submit">Download</button>
+					</a>
+				</fieldset>
+				<fieldset>
+					<a href="{{ url_for('index') }}"><button type="submit">Back</button></a>
+				</fieldset>
+			</div>
+		</div>
+
+	</body>
+</html>

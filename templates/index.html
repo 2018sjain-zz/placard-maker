@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Placard Maker</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	</head>
+	<body>
+	    <div class="container">
+			<form id="contact" action="." method="post">
+				<h3>Placard Maker</h3>
+				<h4>Contact us for custom placards</h4>
+				<fieldset>
+					<input placeholder="Conference" type="text" name = "conference" tabindex="1" required autofocus>
+				</fieldset>
+				<fieldset>
+					<input placeholder="Room Name" type="text" name="room" tabindex="2" required>
+				</fieldset>
+				<fieldset>
+					<textarea placeholder="Separate names with semicolons (ex. John Doe; Jeff Dunham; Jerry Smith)" name="people" tabindex="5" required></textarea>
+				</fieldset>
+				<fieldset>
+					<button name="my-form" type="submit" id="contact-submit">Generate</button>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>
+
